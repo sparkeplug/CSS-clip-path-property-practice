@@ -1,0 +1,38 @@
+body {
+  height: 100vh;
+  background: #e2f2fd;
+  margin: 0;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  width: 30%;
+  background: white;
+  border-radius: 10px;
+
+  .inner {
+    background: #00b6ff;
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+    clip-path: circle(10% at 0% 0%);
+    transition: clip-path 0.5s ease-in-out;
+
+    h1 {
+      color: white;
+      margin: 0;
+    }
+
+    p {
+      color: white;
+      font-size: 0.8rem;
+    }
+  }
+
+  &:hover .inner {
+    clip-path: circle(75%);
+  }
+}
